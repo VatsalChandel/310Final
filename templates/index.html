@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="profile-form-container">
+        <h2>Car Detail</h2> 
+        <form action='/submit-details' method="post">
+            <div class="input-group">
+                <label for="make">Make</label>
+                <input type="text" id="make" name="make">
+            </div>
+
+            <div class="input-group">
+                <label for="model">Model</label>
+                <input type="text" id="model" name="model">
+            </div>
+
+            <div class="input-group">
+                <label for="fuel">Fuel</label>
+                <select id="fuel" name="fuel">
+                    <option value="None">N/A</option>
+                    <option value="electricity">Electric</option>
+                    <option value="gas">Gasoline</option>
+                    <option value="disel">Disel</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="drive">Drive</label>
+                <select id="drive" name="drive">
+                    <option value="None">N/A</option>
+                    <option value="AWD">AWD</option>
+                    <option value="RWD">RWD</option>
+                    <option value="FWD">FWD</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year">
+            </div>
+
+            </div>
+            <div class="input-group">
+                <label for="min_mpg">Minimum MPG</label>
+                <input type="text" id="min_mpg" name="min_mpg">
+            </div>
+
+            </div>
+            <div class="input-group">
+                <label for="price_min">Minimum Price</label>
+                <input type="text" id="price_min" name="price_min">
+            </div>
+
+            </div>
+            <div class="input-group">
+                <label for="price_max">Maximum Price</label>
+                <input type="text" id="price_max" name="price_max">
+            </div>
+
+            </div>
+            <div class="input-group">
+                <label for="milage_high">High Milage</label>
+                <input type="text" id="milage_high" name="milage_high">
+            </div>
+
+            </div>
+            <div class="input-group">
+                <label for="milage_low">Low Milage</label>
+                <input type="text" id="milage_low" name="milage_low">
+            </div>
+
+            <div class="input-group">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
